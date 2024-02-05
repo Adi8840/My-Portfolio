@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5866eae3c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <nav id="navbar">
+            <h2 class="logo">Portfolio</h2>
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#technologies">Skills</a></li>
+                <li> <a href="#portfolio">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+
+                <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="container">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Aditya</span> <br> from India</h1>
+                <p>Sofware Engineer!</p>
+            </div>
+
+            <button class="cvbtn"><a href="images/Resume1.pdf" download class="btn btn2">Download CV</a></button>
+        </div>
+    </div>
+
+    <!-- ----------About-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/MyPhoto.jpg" alt="Aditya">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I am Aditya Rajpoot <br>
+                        I excel in problem-solving, Data Structures & Algorithms.I possess a strong work ethic and am
+                        driven by goals. Time management holds great significance for me, and I never compromise on it.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="experience">
+                        <ul>
+                            <li><span>Jun 2023 - Jul 2023 </span><br>MERN Stack Trainee at CETPA Infotech Pvt. ltd</li>
+                            <li><span>Apr 2023 - Jun 2023</span><br>Employ-Ability Training Program at TCP Global
+                                Corporation</li>
+                            <li><span>Jan 2023 - Feb 2023 </span><br>Java Programmer at Oasis Infobyte</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2020 - Present</span><br>B.Tech IMS Engineering College, Ghaziabad</li>
+                            <li><span>2019 - 2020</span><br>12th from Edmonton Public School</li>
+                            <li><span>2017 - 2018</span><br>10th from Edmonton Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Skills---------->
+    <div id="technologies">
+        <div class="container">
+            <h1 class="sub-title">Technologies Stack</h1>
+            <div class="technologies-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Data Structure & Algorithms</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Javascript</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-node-js"></i>
+                    <h2>Node JS</h2>
+                </div>
+                <div>
+                    <h2>Express JS</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>SQL</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>Github</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>E-COMMERCE APP</h3>
+                        <p>Real time E-commerce App that works like Amazon and Flipkart
+                            and has separate panel for user and admin.</p>
+                        <button><a href="https://gold-itchy-beaver.cyclic.cloud/" target="_blank">View</a></button>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.jpg" alt="">
+                    <div class="layer">
+                        <h3>WEATHER APP</h3>
+                        <p>Web Application that gives the current weather information
+                            based on city and country name.</p>
+                        <button><a href="https://github.com/Adi8840/Weather_App.git" target="_blank">View</a></button>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Voting.jpg" alt="">
+                    <div class="layer">
+                        <h3>E-VOTING SYSTEM</h3>
+                        <p>Terminal based application that allows people to vote to
+                            registered people</p>
+                        <button><a href="https://github.com/Adi8840/E-Voting_System-Mini-Project-.git"
+                                target="_blank">View</a></button>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/atm.avif" alt="">
+                    <div class="layer">
+                        <h3>ATM INTERFACE</h3>
+                        <p>Terminal based application that allows people to vote to
+                            registered people</p>
+                        <button><a href="https://github.com/Adi8840/ATM_Interface.git" target="_blank">View</a></button>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/clock.jpg" alt="">
+                    <div class="layer">
+                        <h3>Analog Clock</h3>
+                        <p>Enhanced user interaction and real-time functionality by developing and implementing an
+                            Analog Clock web
+                            application using HTML, CSS, JavaScript, resulting in a notable 25% improvement.</p>
+                        <button><a href="https://github.com/Adi8840/Digital-Clock.git" target="_blank">View</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> adityarajpoot681@gmail.com</p>
+
+                    <p> <i class="fa-solid fa-phone-volume"></i> +91 8840183337</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/adityarajpoot8896/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/adityarajpoot095/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/aditya.lodhirajpoot.5?mibextid=kFxxJD" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="mycontactform">
+                        <input type="hidden" name="access_key" value="f4a08c26-26c8-4c06-b81e-a20ab92d29a1">
+
+                        <input type="text" name="Name" placeholder="Your Name" class="formrow" required>
+
+                        <input type="email" name="Email" placeholder="Your Email" class="formrow" required>
+
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message" class="formrow"></textarea>
+
+                        <button type="submit" class="submit_btn" onclick="refreshForm()">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="Copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Aditya 2024</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "-60px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-300px";
+        }
+    </script>
+
+    <script>
+        function refreshForm() {
+            let form = document.getElementById("mycontactform");
+
+            form.addEventListener('submit', (e) => {
+
+            })
+        }
+    </script>
+</body>
+
+</html>
